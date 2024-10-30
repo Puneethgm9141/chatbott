@@ -25,7 +25,7 @@ def chat():
     if is_college_related(question):
         response = chat_with_llama(question)
     else:
-        response = "Please ask questions related to college topics (e.g., courses, admissions, student life)."
+        response = "Please ask questions related to college topics."
 
     return jsonify({"response": response})
 
